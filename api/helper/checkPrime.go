@@ -1,7 +1,5 @@
 package helper
 
-import "math"
-
 // return true if prime number and vice versa
 func CheckPrime(n int) bool {
 
@@ -9,7 +7,7 @@ func CheckPrime(n int) bool {
 		return false
 	}
 
-	sr := int(math.Sqrt(float64(n)))
+	sr := int(float64(n / 2))
 
 	for i := 2; i <= sr; i++ {
 		if n%i == 0 {
